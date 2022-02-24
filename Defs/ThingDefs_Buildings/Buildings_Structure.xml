@@ -10,7 +10,7 @@
     <category>Building</category>
     <description>A reinforced impassable wall, created by layering materials over eachother, with a firing port to allow shooting from relative safety. Capable of holding up a roof.</description>
     <graphicData>
-      <texPath>Things/Building/Linked/ReinforcedEmbrasure/HRK_Atlas</texPath>
+      <texPath>Things/Building/Linked/HRK_ReinforcedEmbrasure_Atlas</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <linkType>CornerFiller</linkType>
       <linkFlags>
@@ -28,7 +28,7 @@
         <edgeRight>Damage/Edge</edgeRight>
       </damageData>
     </graphicData>
-    <uiIconPath>Things/Building/Linked/ReinforcedEmbrasure/HRK_Icon</uiIconPath>
+    <uiIconPath>Things/Building/Linked/HRK_ReinforcedEmbrasure_Icon</uiIconPath>
     <statBases>
       <MaxHitPoints>1000</MaxHitPoints>
       <WorkToBuild>300</WorkToBuild>
@@ -60,7 +60,7 @@
       <isInert>true</isInert>
       <canPlaceOverWall>true</canPlaceOverWall>
       <blueprintGraphicData>
-        <texPath>Things/Building/Linked/ReinforcedEmbrasure/HRK_Blueprint</texPath>
+        <texPath>Things/Building/Linked/HRK_Embrasure_Blueprint</texPath>
       </blueprintGraphicData>
     </building>
     <comps>
@@ -94,7 +94,7 @@
     <category>Building</category>
     <description>An impassable, heavy wall with multiple layers of armor. Nearly completely resistant to explosives and any breaching tools with a firing port to allow shooting from relative safety. Capable of holding up a roof.</description>
     <graphicData>
-      <texPath>Things/Building/Linked/ReinforcedEmbrasure/HRK_Atlas</texPath>
+      <texPath>Things/Building/Linked/HRK_ArmoredEmbrasure_Atlas</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <linkType>CornerFiller</linkType>
       <linkFlags>
@@ -112,7 +112,7 @@
         <edgeRight>Damage/Edge</edgeRight>
       </damageData>
     </graphicData>
-    <uiIconPath>Things/Building/Linked/ReinforcedEmbrasure/HRK_Icon</uiIconPath>
+    <uiIconPath>Things/Building/Linked/HRK_ArmoredEmbrasure_Icon</uiIconPath>
     <statBases>
       <MaxHitPoints>800</MaxHitPoints>
       <WorkToBuild>505</WorkToBuild>
@@ -144,7 +144,7 @@
       <isInert>true</isInert>
       <canPlaceOverWall>true</canPlaceOverWall>
       <blueprintGraphicData>
-        <texPath>Things/Building/Linked/ReinforcedEmbrasure/HRK_Blueprint</texPath>
+        <texPath>Things/Building/Linked/HRK_Embrasure_Blueprint</texPath>
       </blueprintGraphicData>
     </building>
     <comps>
@@ -176,9 +176,9 @@
     <label>prefab embrasure</label>
     <thingClass>Building</thingClass>
     <category>Building</category>
-    <description>A reinforced impassable wall, created by layering materials over eachother, with a firing port to allow shooting from relative safety. Capable of holding up a roof.</description>
+    <description>An impassable, prefabricated wall with a firing port to allow shooting from relative safety. Capable of holding up a roof.</description>
     <graphicData>
-      <texPath>Things/Building/Linked/ReinforcedEmbrasure/HRK_Atlas</texPath>
+      <texPath>Things/Building/Linked/HRK_PrefabEmbrasure_Atlas</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <linkType>CornerFiller</linkType>
       <linkFlags>
@@ -196,7 +196,7 @@
         <edgeRight>Damage/Edge</edgeRight>
       </damageData>
     </graphicData>
-    <uiIconPath>Things/Building/Linked/ReinforcedEmbrasure/HRK_Icon</uiIconPath>
+    <uiIconPath>Things/Building/Linked/HRK_PrefabEmbrasure_Icon</uiIconPath>
     <statBases>
       <MaxHitPoints>500</MaxHitPoints>
       <WorkToBuild>20</WorkToBuild>
@@ -232,7 +232,7 @@
       <isInert>true</isInert>
       <canPlaceOverWall>true</canPlaceOverWall>
       <blueprintGraphicData>
-        <texPath>Things/Building/Linked/ReinforcedEmbrasure/HRK_Blueprint</texPath>
+        <texPath>Things/Building/Linked/HRK_Embrasure_Blueprint</texPath>
       </blueprintGraphicData>
     </building>
     <researchPrerequisites>
