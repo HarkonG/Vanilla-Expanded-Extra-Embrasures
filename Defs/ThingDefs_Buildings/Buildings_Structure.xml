@@ -32,7 +32,7 @@
     <statBases>
       <MaxHitPoints>1000</MaxHitPoints>
       <WorkToBuild>300</WorkToBuild>
-      <Flammability>0.2</Flammability>
+      <MeditationFocusStrength>0.22</MeditationFocusStrength>
     </statBases>
     <costStuffCount>5</costStuffCount>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
@@ -63,18 +63,36 @@
         <texPath>Things/Building/Linked/ReinforcedEmbrasure/HRK_Blueprint</texPath>
       </blueprintGraphicData>
     </building>
+    <comps>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Minimal</li>
+        </focusTypes>
+      </li>
+    </comps>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>0.05</multiplier>
+      </li>
+      <li>
+        <damageDef>Thump</damageDef>
+        <multiplier>0.05</multiplier>
+      </li>
+    </damageMultipliers>
     <researchPrerequisites>
       <li>SpacerFurniture</li>
     </researchPrerequisites>
   </ThingDef>
 
   <!--VFE Architect-->
-  <ThingDef ParentName="BuildingBase" MayRequire="VanillaExpanded.VFESpacer">
+  <ThingDef ParentName="BuildingBase" MayRequire="VanillaExpanded.VFEArchitect">
     <defName>HRK_ArmoredEmbrasure</defName>
-    <label>reinforced embrasure</label>
+    <label>armored embrasure</label>
     <thingClass>Building</thingClass>
     <category>Building</category>
-    <description>A reinforced impassable wall, created by layering materials over eachother, with a firing port to allow shooting from relative safety. Capable of holding up a roof.</description>
+    <description>An impassable, heavy wall with multiple layers of armor. Nearly completely resistant to explosives and any breaching tools with a firing port to allow shooting from relative safety. Capable of holding up a roof.</description>
     <graphicData>
       <texPath>Things/Building/Linked/ReinforcedEmbrasure/HRK_Atlas</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -96,11 +114,11 @@
     </graphicData>
     <uiIconPath>Things/Building/Linked/ReinforcedEmbrasure/HRK_Icon</uiIconPath>
     <statBases>
-      <MaxHitPoints>1000</MaxHitPoints>
-      <WorkToBuild>300</WorkToBuild>
-      <Flammability>0.2</Flammability>
+      <MaxHitPoints>800</MaxHitPoints>
+      <WorkToBuild>505</WorkToBuild>
+      <MeditationFocusStrength>0.22</MeditationFocusStrength>
     </statBases>
-    <costStuffCount>5</costStuffCount>
+    <costStuffCount>10</costStuffCount>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
@@ -129,15 +147,33 @@
         <texPath>Things/Building/Linked/ReinforcedEmbrasure/HRK_Blueprint</texPath>
       </blueprintGraphicData>
     </building>
+    <comps>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Minimal</li>
+        </focusTypes>
+      </li>
+    </comps>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>0.05</multiplier>
+      </li>
+      <li>
+        <damageDef>Thump</damageDef>
+        <multiplier>0.05</multiplier>
+      </li>
+    </damageMultipliers>
     <researchPrerequisites>
-      <li>SpacerFurniture</li>
+      <li>Fabrication</li>
     </researchPrerequisites>
   </ThingDef>
 
   <!--RimEffect Core-->
-  <ThingDef ParentName="BuildingBase" MayRequire="VanillaExpanded.VFESpacer">
+  <ThingDef ParentName="BuildingBase" MayRequire="RimEffect.Core">
     <defName>HRK_PrefabEmbrasure</defName>
-    <label>reinforced embrasure</label>
+    <label>prefab embrasure</label>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <description>A reinforced impassable wall, created by layering materials over eachother, with a firing port to allow shooting from relative safety. Capable of holding up a roof.</description>
@@ -162,11 +198,15 @@
     </graphicData>
     <uiIconPath>Things/Building/Linked/ReinforcedEmbrasure/HRK_Icon</uiIconPath>
     <statBases>
-      <MaxHitPoints>1000</MaxHitPoints>
-      <WorkToBuild>300</WorkToBuild>
-      <Flammability>0.2</Flammability>
+      <MaxHitPoints>500</MaxHitPoints>
+      <WorkToBuild>20</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <MeditationFocusStrength>0.22</MeditationFocusStrength>
     </statBases>
-    <costStuffCount>5</costStuffCount>
+    <costStuffCount>3</costStuffCount>
+    <costList>
+      <RE_PrefabComponent>1</RE_PrefabComponent>
+    </costList>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
@@ -196,7 +236,7 @@
       </blueprintGraphicData>
     </building>
     <researchPrerequisites>
-      <li>SpacerFurniture</li>
+      <li>RE_BasicPrefabrication</li>
     </researchPrerequisites>
   </ThingDef>
 
