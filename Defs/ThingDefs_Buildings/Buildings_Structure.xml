@@ -1,6 +1,80 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
+<!-- 20% less HP - 25% more work to build -->
 <Defs>
+
+  <!--Vanilla-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>Embrasure</defName>
+    <label>embrasure</label>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <description>A wall with a firing port to allow shooting from relative safety.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/VanillaEmbrasure</texPath>
+      <graphicClass>Graphic_Appearances</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Linked/VanillaEmbrasure/HRK_EmbrasureSmooth_Icon</uiIconPath>
+    <statBases>
+      <MaxHitPoints>240</MaxHitPoints>
+      <WorkToBuild>190</WorkToBuild>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <costStuffCount>5</costStuffCount>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.7</fillPercent>
+    <coversFloor>true</coversFloor>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <holdsRoof>true</holdsRoof>
+    <designationCategory>Structure</designationCategory>
+    <staticSunShadowHeight>1</staticSunShadowHeight>
+    <blockLight>false</blockLight>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>true</isInert>
+      <canPlaceOverWall>true</canPlaceOverWall>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Embrasure/Embrasure_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <comps>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Minimal</li>
+        </focusTypes>
+      </li>
+    </comps>
+  </ThingDef>
 
   <!--VFE Spacer-->
   <ThingDef ParentName="BuildingBase" MayRequire="VanillaExpanded.VFESpacer">
@@ -30,8 +104,8 @@
     </graphicData>
     <uiIconPath>Things/Building/Linked/HRK_ReinforcedEmbrasure_Icon</uiIconPath>
     <statBases>
-      <MaxHitPoints>1000</MaxHitPoints>
-      <WorkToBuild>300</WorkToBuild>
+      <MaxHitPoints>800</MaxHitPoints>
+      <WorkToBuild>375</WorkToBuild>
       <MeditationFocusStrength>0.22</MeditationFocusStrength>
     </statBases>
     <costStuffCount>15</costStuffCount>
@@ -114,8 +188,8 @@
     </graphicData>
     <uiIconPath>Things/Building/Linked/HRK_ArmoredEmbrasure_Icon</uiIconPath>
     <statBases>
-      <MaxHitPoints>800</MaxHitPoints>
-      <WorkToBuild>505</WorkToBuild>
+      <MaxHitPoints>640</MaxHitPoints>
+      <WorkToBuild>631</WorkToBuild>
       <MeditationFocusStrength>0.22</MeditationFocusStrength>
     </statBases>
     <costStuffCount>10</costStuffCount>
@@ -198,8 +272,8 @@
     </graphicData>
     <uiIconPath>Things/Building/Linked/HRK_PrefabEmbrasure_Icon</uiIconPath>
     <statBases>
-      <MaxHitPoints>500</MaxHitPoints>
-      <WorkToBuild>20</WorkToBuild>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToBuild>25</WorkToBuild>
       <Flammability>1.0</Flammability>
       <MeditationFocusStrength>0.22</MeditationFocusStrength>
     </statBases>
@@ -239,5 +313,84 @@
       <li>RE_BasicPrefabrication</li>
     </researchPrerequisites>
   </ThingDef>
+
+  <!--VFE Medieval
+  <ThingDef ParentName="BuildingBase" MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">
+    <defName>HRK_CobblestoneEmbrasure</defName>
+    <label>cobblestone embrasure</label>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockWall</texPath>
+      <graphicClass>Graphic_Appearances</graphicClass>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Building/Linked/RockWall_MenuIcon</uiIconPath>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <WorkToBuild>135</WorkToBuild>
+      <Flammability>1.0</Flammability>
+      <MeditationFocusStrength>0.22</MeditationFocusStrength>
+      <Beauty>-2</Beauty>
+    </statBases>
+    <building>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/RockWall/RockWall_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>    
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.7</fillPercent>
+    <coversFloor>true</coversFloor>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <holdsRoof>true</holdsRoof>
+    <designationCategory>Structure</designationCategory>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>false</blockLight>
+    <canOverlapZones>false</canOverlapZones>
+    <fertility>0</fertility>
+    <costStuffCount>1</costStuffCount>
+    <stuffCategories Inherit="False">
+      <li>VFEM_StoneChunks</li>
+    </stuffCategories>
+    <comps>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+          <li>Minimal</li>
+        </focusTypes>
+      </li>
+    </comps>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>2</multiplier>
+      </li>
+      <li>
+        <damageDef>Thump</damageDef>
+        <multiplier>4</multiplier>
+      </li>
+    </damageMultipliers>
+  </ThingDef>-->
 
 </Defs>
