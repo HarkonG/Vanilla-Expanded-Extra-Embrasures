@@ -63,7 +63,7 @@
       <isInert>true</isInert>
       <canPlaceOverWall>true</canPlaceOverWall>
       <blueprintGraphicData>
-        <texPath>Things/Building/Embrasure/Embrasure_Blueprint_Atlas</texPath>
+        <texPath>Things/Building/Linked/HRK_Embrasure_Blueprint</texPath>
       </blueprintGraphicData>
     </building>
     <comps>
