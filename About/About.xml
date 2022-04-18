@@ -11,6 +11,7 @@
 	[HRK] Vanilla Expanded Extra Embrasures
 	</description>
 	<loadAfter>
+		<li>CETeam.CombatExtended</li>
 		<li>OskarPotocki.VanillaFactionsExpanded.MedievalModule</li>
 		<li>VanillaExpanded.VFESpacer</li>
 		<li>VanillaExpanded.VFEArchitect</li>
