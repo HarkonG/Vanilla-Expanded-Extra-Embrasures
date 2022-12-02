@@ -17,7 +17,7 @@
                             <thingClass>Building</thingClass>
                             <category>Building</category>
                             <graphicData>
-                                <texPath>Things/Building/Linked/HRK_FineEmbrasure</texPath>
+                                <texPath>Things/Building/Linked/FineEmbrasure</texPath>
                                 <graphicClass>Graphic_Appearances</graphicClass>
                                 <linkType>CornerFiller</linkType>
                                 <linkFlags>
@@ -35,15 +35,15 @@
                                     <edgeRight>Damage/Edge</edgeRight>
                                 </damageData>
                             </graphicData>
-                            <uiIconPath>Things/Building/Linked/HRK_FineEmbrasure/HRK_FineEmbrasureSmooth_Icon</uiIconPath>
+                            <uiIconPath>Things/Building/Linked/FineEmbrasure/HRK_FineEmbrasureSmooth_Icon</uiIconPath>
                             <uiIconPathsStuff>
                                 <li>
                                     <appearance>Planks</appearance>
-                                    <iconPath>Things/Building/Linked/HRK_FineEmbrasure/HRK_FineEmbrasurePlanks_Icon</iconPath>
+                                    <iconPath>Things/Building/Linked/FineEmbrasure/HRK_FineEmbrasurePlanks_Icon</iconPath>
                                 </li>
                                 <li>
                                     <appearance>Bricks</appearance>
-                                    <iconPath>Things/Building/Linked/HRK_FineEmbrasure/HRK_FineEmbrasureBricks_Icon</iconPath>
+                                    <iconPath>Things/Building/Linked/FineEmbrasure/HRK_FineEmbrasureBricks_Icon</iconPath>
                                 </li>
                             </uiIconPathsStuff>
                             <statBases>
