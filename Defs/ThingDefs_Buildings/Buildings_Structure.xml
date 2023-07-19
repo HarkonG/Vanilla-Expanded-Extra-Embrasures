@@ -4,7 +4,7 @@
 
   <!--Vanilla-->
   <ThingDef ParentName="BuildingBase">
-    <defName>Embrasure</defName>
+    <defName>CE_Embrasure</defName>
     <label>embrasure</label>
     <thingClass>Building</thingClass>
     <category>Building</category>
