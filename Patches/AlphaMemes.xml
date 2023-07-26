@@ -72,7 +72,7 @@
                     <xpath>Defs/StyleCategoryDef[defName="AM_Kemetic"]/thingDefStyles</xpath>
                     <value>
                         <li>
-                            <thingDef>Embrasure</thingDef>
+                            <thingDef>CE_Embrasure</thingDef>
                             <styleDef>HRK_KemeticEmbrasure</styleDef>
                         </li>
                     </value>
@@ -82,7 +82,7 @@
                     <xpath>Defs/StyleCategoryDef[defName="AM_Scavenger"]/thingDefStyles</xpath>
                     <value>
                         <li>
-                            <thingDef>Embrasure</thingDef>
+                            <thingDef>CE_Embrasure</thingDef>
                             <styleDef>HRK_ScavengerEmbrasure</styleDef>
                         </li>
                     </value>
@@ -92,7 +92,7 @@
                     <xpath>Defs/StyleCategoryDef[defName="AM_SteampunkRevival"]/thingDefStyles</xpath>
                     <value>
                         <li>
-                            <thingDef>Embrasure</thingDef>
+                            <thingDef>CE_Embrasure</thingDef>
                             <styleDef>HRK_SteampunkEmbrasure</styleDef>
                         </li>
                     </value>
