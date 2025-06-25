@@ -4,9 +4,8 @@
 	<author>Harkon</author>
 	<url>https://steamcommunity.com/sharedfiles/filedetails/?id=2412382876</url>
 	<packageId>Harkon.VEAddOn.VanillaExpandedExtraEmbrasures</packageId>
-	<supportedVersions>		
-		<li>1.4</li>
-<li>1.5</li>
+	<supportedVersions>
+		<li>1.5</li>
 	</supportedVersions>
 	<description>
 	[HRK] Vanilla Expanded Extra Embrasures
@@ -17,10 +16,9 @@
 		<li>Ludeon.RimWorld.Ideology</li>
 		<li>Ludeon.RimWorld.Biotech</li>
 		<li>CETeam.CombatExtended</li>
-		<li>OskarPotocki.VanillaFactionsExpanded.MedievalModule</li>
-		<li>VanillaExpanded.VFESpacer</li>
 		<li>VanillaExpanded.VFEArchitect</li>
-		<li>RimEffect.Core</li>
 		<li>Sarg.AlphaMemes</li>
+		<li>rebuild.cotr.doorsandcorners</li>
+		<li>OskarPotocki.VFE.Medieval2</li>
 	</loadAfter>
 </ModMetaData>
