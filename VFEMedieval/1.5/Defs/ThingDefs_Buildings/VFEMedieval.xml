@@ -7,7 +7,7 @@
         <label>castle embrasure</label>
         <category>Building</category>
         <description>An incredibly resistant impassable wall made out of oversized stone blocks. Very slow to build. Capable of holding a roof. If the castle wall sustains enough damage, it becomes a chest-high passable cover that, when repaired, turns back into an impassable wall. This variant includes a firing port, allowing shooting from relative safety.</description>
-        <thingClass>HRKVEExtraEmbrasures.CastleWallEmbrasure</thingClass>
+        <thingClass>HRKVEEEVFEMedieval.CastleWallEmbrasure</thingClass>
         <graphicData>
             <texPath>Things/Building/Linked/HRK_CastleWallEmbrasure_Atlas</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -100,7 +100,7 @@
         <defName>HRK_DamagedCastleWallEmbrasure</defName>
         <label>damaged castle embrasure</label>
         <description>An incredibly resistant impassable wall made out of oversized stone blocks. Very slow to build. Capable of holding a roof. If the castle wall sustains enough damage, it becomes a chest-high passable cover that, when repaired, turns back into an impassable wall. This variant includes a firing port, allowing shooting from relative safety.</description>
-        <thingClass>HRKVEExtraEmbrasures.DamagedCastleWallEmbrasure</thingClass>
+        <thingClass>HRKVEEEVFEMedieval.DamagedCastleWallEmbrasure</thingClass>
         <category>Building</category>
         <graphicData>
             <texPath>Things/Building/Linked/CastleWallDamaged/CastleWallDamaged_Atlas</texPath>
