@@ -17,7 +17,7 @@
                             <category>Building</category>
                             <description>A wall with a firing port to allow shooting from relative safety. This is the vanilla embrasure if you are using Combat Extended and you see this def there is something wrong with your modlist.</description>
                             <graphicData>
-                                <texPath>Things/Building/Linked/Embrasure</texPath>
+                                <texPath>Things/Building/Embrasure</texPath>
                                 <graphicClass>Graphic_Appearances</graphicClass>
                                 <linkType>CornerFiller</linkType>
                                 <linkFlags>
@@ -35,15 +35,15 @@
                                     <edgeRight>Damage/Edge</edgeRight>
                                 </damageData>
                             </graphicData>
-                            <uiIconPath>Things/Building/Linked/Embrasure/HRK_EmbrasureSmooth_Icon</uiIconPath>
+                            <uiIconPath>Things/Building/Embrasure/EmbrasureSmooth_MenuIcon</uiIconPath>
                             <uiIconPathsStuff>
                                 <li>
                                     <appearance>Planks</appearance>
-                                    <iconPath>Things/Building/Linked/Embrasure/HRK_EmbrasurePlanks_Icon</iconPath>
+                                    <iconPath>Things/Building/Embrasure/EmbrasurePlanks_MenuIcon</iconPath>
                                 </li>
                                 <li>
                                     <appearance>Bricks</appearance>
-                                    <iconPath>Things/Building/Linked/Embrasure/HRK_EmbrasureBricks_Icon</iconPath>
+                                    <iconPath>Things/Building/Embrasure/EmbrasureBricks_MenuIcon</iconPath>
                                 </li>
                             </uiIconPathsStuff>
                             <statBases>
@@ -64,7 +64,7 @@
                             <selectable>true</selectable>
                             <neverMultiSelect>true</neverMultiSelect>
                             <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
-                            <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+                            <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>                            <!-- Best affordance needed for stone -->
                             <holdsRoof>true</holdsRoof>
                             <designationCategory>Structure</designationCategory>
                             <staticSunShadowHeight>1</staticSunShadowHeight>
@@ -81,7 +81,7 @@
                                 <isInert>true</isInert>
                                 <canPlaceOverWall>true</canPlaceOverWall>
                                 <blueprintGraphicData>
-                                    <texPath>Things/Building/Linked/HRK_Embrasure_Blueprint</texPath>
+                                    <texPath>Things/Building/Embrasure/Embrasure_Blueprint_Atlas</texPath>
                                 </blueprintGraphicData>
                             </building>
                         </ThingDef>

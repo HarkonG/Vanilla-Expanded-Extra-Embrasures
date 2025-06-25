@@ -64,7 +64,7 @@
             <ai_chillDestination>false</ai_chillDestination>
             <supportsWallAttachments>true</supportsWallAttachments>
             <blueprintGraphicData>
-                <texPath>Things/Building/Linked/HRK_Embrasure_Blueprint</texPath>
+                <texPath>Things/Building/Embrasure/Embrasure_Blueprint_Atlas</texPath>
             </blueprintGraphicData>
             <relatedBuildCommands>
                 <li>Door</li>
