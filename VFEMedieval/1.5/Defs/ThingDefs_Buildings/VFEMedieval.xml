@@ -5,9 +5,9 @@
     <ThingDef ParentName="BuildingBase">
         <defName>HRK_CastleWallEmbrasure</defName>
         <label>castle embrasure</label>
-        <thingClass>Building</thingClass>
         <category>Building</category>
         <description>An incredibly resistant impassable wall made out of oversized stone blocks. Very slow to build. Capable of holding a roof. If the castle wall sustains enough damage, it becomes a chest-high passable cover that, when repaired, turns back into an impassable wall. This variant includes a firing port, allowing shooting from relative safety.</description>
+        <thingClass>HRKVEExtraEmbrasures.CastleWallEmbrasure</thingClass>
         <graphicData>
             <texPath>Things/Building/Linked/HRK_CastleWallEmbrasure_Atlas</texPath>
             <graphicClass>Graphic_Single</graphicClass>
@@ -43,7 +43,7 @@
         <fillPercent>0.7</fillPercent>
         <coversFloor>true</coversFloor>
         <placingDraggableDimensions>1</placingDraggableDimensions>
-        <tickerType>Never</tickerType>
+        <tickerType>Rare</tickerType>
         <rotatable>false</rotatable>
         <selectable>true</selectable>
         <neverMultiSelect>true</neverMultiSelect>
@@ -94,6 +94,93 @@
         <researchPrerequisites>
             <li>VFEM2_MedievalArchitecture</li>
         </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>HRK_DamagedCastleWallEmbrasure</defName>
+        <label>damaged castle embrasure</label>
+        <description>An incredibly resistant impassable wall made out of oversized stone blocks. Very slow to build. Capable of holding a roof. If the castle wall sustains enough damage, it becomes a chest-high passable cover that, when repaired, turns back into an impassable wall. This variant includes a firing port, allowing shooting from relative safety.</description>
+        <thingClass>HRKVEExtraEmbrasures.DamagedCastleWallEmbrasure</thingClass>
+        <category>Building</category>
+        <graphicData>
+            <texPath>Things/Building/Linked/CastleWallDamaged/CastleWallDamaged_Atlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Linked/CastleWallDamaged/CastleWallDamagedMenuIcon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>700</MaxHitPoints>
+            <WorkToBuild>410</WorkToBuild>
+            <Flammability>1.0</Flammability>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+        </statBases>
+        <costStuffCount>10</costStuffCount>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>110</pathCost>
+        <blockWind>true</blockWind>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>0.55</fillPercent>
+        <coversFloor>true</coversFloor>
+        <placingDraggableDimensions>1</placingDraggableDimensions>
+        <tickerType>Rare</tickerType>
+        <rotatable>false</rotatable>
+        <selectable>true</selectable>
+        <neverMultiSelect>true</neverMultiSelect>
+        <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>        <!-- Best affordance needed for stone -->
+        <holdsRoof>false</holdsRoof>
+        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <blockLight>true</blockLight>
+        <canOverlapZones>false</canOverlapZones>
+        <fertility>0</fertility>
+        <stuffCategories>
+            <li>Stony</li>
+        </stuffCategories>
+        <building>
+            <paintable>true</paintable>
+            <isInert>true</isInert>
+            <isFence>true</isFence>
+            <isPlaceOverableWall>true</isPlaceOverableWall>
+            <ai_chillDestination>false</ai_chillDestination>
+            <supportsWallAttachments>true</supportsWallAttachments>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+        </building>
+        <comps>
+            <li Class="CompProperties_MeditationFocus">
+                <statDef>MeditationFocusStrength</statDef>
+                <focusTypes>
+                    <li>Minimal</li>
+                </focusTypes>
+            </li>
+        </comps>
+        <damageMultipliers>
+            <li>
+                <damageDef>Bomb</damageDef>
+                <multiplier>2</multiplier>
+            </li>
+            <li>
+                <damageDef>Thump</damageDef>
+                <multiplier>2</multiplier>
+            </li>
+        </damageMultipliers>
     </ThingDef>
 
 </Defs>

@@ -39,9 +39,10 @@
             </li>
         </uiIconPathsStuff>
         <statBases>
-            <MaxHitPoints>300</MaxHitPoints>
-            <WorkToBuild>150</WorkToBuild>
-            <Flammability>1.0</Flammability>
+            <MaxHitPoints>185</MaxHitPoints>
+            <WorkToBuild>85</WorkToBuild>
+            <Flammability>1.2</Flammability>
+            <MeditationFocusStrength>0.11</MeditationFocusStrength>
         </statBases>
         <costStuffCount>5</costStuffCount>
         <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
