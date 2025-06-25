@@ -3,7 +3,13 @@
   <v1.5>
     <li>/</li>
     <li>1.5</li>
-    <li IfModActive="OskarPotocki.VFE.Medieval2">VFEMedieval</li>
-    <li IfModActive="rebuild.cotr.doorsandcorners">ReBuildDoorAndCorners</li>
+    <li IfModActive="OskarPotocki.VFE.Medieval2">VFEMedieval/1.5</li>
+    <li IfModActive="rebuild.cotr.doorsandcorners">ReBuildDoorAndCorners/1.5</li>
   </v1.5>
+  <v1.6>
+    <li>/</li>
+    <li>1.6</li>
+    <li IfModActive="OskarPotocki.VFE.Medieval2">VFEMedieval/1.6</li>
+    <li IfModActive="rebuild.cotr.doorsandcorners">ReBuildDoorAndCorners/1.6</li>
+  </v1.6>
 </loadFolders>
