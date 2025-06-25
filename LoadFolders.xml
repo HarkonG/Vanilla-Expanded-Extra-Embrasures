@@ -2,8 +2,8 @@
 <loadFolders>
   <v1.5>
     <li>/</li>
-    <li>1.5</li>    
-    <li IfModActive="rebuild.cotr.doorsandcorners">ReBuildDoorAndCorners</li>
+    <li>1.5</li>
     <li IfModActive="OskarPotocki.VFE.Medieval2">VFEMedieval</li>
+    <li IfModActive="rebuild.cotr.doorsandcorners">ReBuildDoorAndCorners</li>
   </v1.5>
 </loadFolders>
