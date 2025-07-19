@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs</xpath>
+                    <value>
+                        <ThingDef ParentName="BuildingBase" MayRequire="VanillaExpanded.VFEArchitect">
+                            <defName>HRK_FineEmbrasure</defName>
+                            <label>fine embrasure</label>
+                            <description>A beautiful, impassable wall with a firing port to allow shooting from relative safety. Capable of holding up a roof.</description>
+                            <thingClass>Building</thingClass>
+                            <category>Building</category>
+                            <graphicData>
+                                <texPath>Things/Building/Linked/FineEmbrasure</texPath>
+                                <graphicClass>Graphic_Appearances</graphicClass>
+                                <linkType>CornerFiller</linkType>
+                                <linkFlags>
+                                    <li>Wall</li>
+                                    <li>Rock</li>
+                                </linkFlags>
+                                <damageData>
+                                    <cornerTL>Damage/Corner</cornerTL>
+                                    <cornerTR>Damage/Corner</cornerTR>
+                                    <cornerBL>Damage/Corner</cornerBL>
+                                    <cornerBR>Damage/Corner</cornerBR>
+                                    <edgeTop>Damage/Edge</edgeTop>
+                                    <edgeBot>Damage/Edge</edgeBot>
+                                    <edgeLeft>Damage/Edge</edgeLeft>
+                                    <edgeRight>Damage/Edge</edgeRight>
+                                </damageData>
+                            </graphicData>
+                            <uiIconPath>Things/Building/Linked/FineEmbrasure/HRK_FineEmbrasureSmooth_Icon</uiIconPath>
+                            <uiIconPathsStuff>
+                                <li>
+                                    <appearance>Planks</appearance>
+                                    <iconPath>Things/Building/Linked/FineEmbrasure/HRK_FineEmbrasurePlanks_Icon</iconPath>
+                                </li>
+                                <li>
+                                    <appearance>Bricks</appearance>
+                                    <iconPath>Things/Building/Linked/FineEmbrasure/HRK_FineEmbrasureBricks_Icon</iconPath>
+                                </li>
+                            </uiIconPathsStuff>
+                            <statBases>
+                                <MaxHitPoints>280</MaxHitPoints>
+                                <WorkToBuild>375</WorkToBuild>
+                                <Flammability>1.0</Flammability>
+                                <MeditationFocusStrength>0.22</MeditationFocusStrength>
+                                <Beauty>3</Beauty>
+                            </statBases>
+                            <costStuffCount>10</costStuffCount>
+                            <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+                            <altitudeLayer>Building</altitudeLayer>
+                            <passability>Impassable</passability>
+                            <blockWind>true</blockWind>
+                            <castEdgeShadows>true</castEdgeShadows>
+                            <fillPercent>0.70</fillPercent>
+                            <coversFloor>true</coversFloor>
+                            <drawStyleCategory>Walls</drawStyleCategory>                    <!--<placingDraggableDimensions>1</placingDraggableDimensions>-->
+                            <tickerType>Never</tickerType>
+                            <rotatable>false</rotatable>
+                            <selectable>true</selectable>
+                            <neverMultiSelect>true</neverMultiSelect>
+                            <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+                            <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+                            <holdsRoof>true</holdsRoof>
+                            <designationCategory>Structure</designationCategory>
+                            <staticSunShadowHeight>1.0</staticSunShadowHeight>
+                            <blockLight>false</blockLight>
+                            <canOverlapZones>false</canOverlapZones>
+                            <fertility>0</fertility>
+                            <stuffCategories>
+                                <li>Metallic</li>
+                                <li>Woody</li>
+                                <li>Stony</li>
+                            </stuffCategories>
+                            <building>
+                                <isInert>true</isInert>
+                                <isPlaceOverableWall>true</isPlaceOverableWall>
+                                <canPlaceOverWall>true</canPlaceOverWall>
+                                <ai_chillDestination>false</ai_chillDestination>
+                                <blueprintGraphicData>
+                                    <texPath>Things/Building/Embrasure/Embrasure_Blueprint_Atlas</texPath>
+                                </blueprintGraphicData>
+                                <paintable MayRequire="Rimworld.Biotech">true</paintable>
+                            </building>
+                            <comps>
+                                <li Class="CompProperties_MeditationFocus">
+                                    <statDef>MeditationFocusStrength</statDef>
+                                    <focusTypes>
+                                        <li>Minimal</li>
+                                    </focusTypes>
+                                </li>
+                                <li Class="CompProperties_Styleable"/>
+                            </comps>
+                            <damageMultipliers>
+                                <li>
+                                    <damageDef>Bomb</damageDef>
+                                    <multiplier>2</multiplier>
+                                </li>
+                                <li>
+                                    <damageDef>Thump</damageDef>
+                                    <multiplier>4</multiplier>
+                                </li>
+                            </damageMultipliers>
+                            <disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+                        </ThingDef>
+                    </value>
+                </li>
+
+            </operations>
+        </match>
+    </Operation>
+</Patch>

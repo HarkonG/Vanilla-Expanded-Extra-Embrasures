@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <ThingDef ParentName="BuildingBase" MayRequire="VanillaExpanded.VFEArchitect">
+        <defName>HRK_ArmoredEmbrasure</defName>
+        <label>armored embrasure</label>
+        <thingClass>Building</thingClass>
+        <category>Building</category>
+        <description>An impassable, heavy wall with multiple layers of armor. Nearly completely resistant to explosives and any breaching tools with a firing port to allow shooting from relative safety. Capable of holding up a roof.</description>
+        <graphicData>
+            <texPath>Things/Building/Linked/HRK_ArmoredEmbrasure_Atlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <linkType>CornerFiller</linkType>
+            <linkFlags>
+                <li>Wall</li>
+                <li>Rock</li>
+            </linkFlags>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+                <edgeTop>Damage/Edge</edgeTop>
+                <edgeBot>Damage/Edge</edgeBot>
+                <edgeLeft>Damage/Edge</edgeLeft>
+                <edgeRight>Damage/Edge</edgeRight>
+            </damageData>
+        </graphicData>
+        <uiIconPath>Things/Building/Linked/HRK_ArmoredEmbrasure_Icon</uiIconPath>
+        <statBases>
+            <MaxHitPoints>640</MaxHitPoints>
+            <WorkToBuild>631</WorkToBuild>
+            <MeditationFocusStrength>0.22</MeditationFocusStrength>
+        </statBases>
+        <costStuffCount>10</costStuffCount>
+        <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>0.70</fillPercent>
+        <coversFloor>true</coversFloor>
+        <drawStyleCategory>Walls</drawStyleCategory>                    <!--<placingDraggableDimensions>1</placingDraggableDimensions>-->
+        <tickerType>Never</tickerType>
+        <rotatable>false</rotatable>
+        <selectable>true</selectable>
+        <neverMultiSelect>true</neverMultiSelect>
+        <useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <holdsRoof>true</holdsRoof>
+        <designationCategory>Structure</designationCategory>
+        <staticSunShadowHeight>1</staticSunShadowHeight>
+        <blockLight>false</blockLight>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <building>
+            <ai_chillDestination>false</ai_chillDestination>
+            <isInert>true</isInert>
+            <canPlaceOverWall>true</canPlaceOverWall>
+            <blueprintGraphicData>
+                <texPath>Things/Building/Embrasure/Embrasure_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>
+            <paintable MayRequire="Rimworld.Biotech">true</paintable>
+        </building>
+        <comps>
+            <li Class="CompProperties_MeditationFocus">
+                <statDef>MeditationFocusStrength</statDef>
+                <focusTypes>
+                    <li>Minimal</li>
+                </focusTypes>
+            </li>
+        </comps>
+        <damageMultipliers>
+            <li>
+                <damageDef>Bomb</damageDef>
+                <multiplier>0.05</multiplier>
+            </li>
+            <li>
+                <damageDef>Thump</damageDef>
+                <multiplier>0.05</multiplier>
+            </li>
+        </damageMultipliers>
+        <researchPrerequisites>
+            <li>Fabrication</li>
+        </researchPrerequisites>
+        <disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+    </ThingDef>
+
+</Defs>
