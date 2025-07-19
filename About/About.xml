@@ -11,6 +11,9 @@
 	<description>
 	[HRK] Vanilla Expanded Extra Embrasures
 	</description>
+	<incompatibleWith>
+		<li>Rebuild.Embrasures</li>
+	</incompatibleWith>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Royalty</li>
