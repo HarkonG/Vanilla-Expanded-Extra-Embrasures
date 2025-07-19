@@ -92,6 +92,7 @@
                                     <texPath>Things/Building/Embrasure/Embrasure_Blueprint_Atlas</texPath>
                                 </blueprintGraphicData>
                                 <paintable MayRequire="Rimworld.Biotech">true</paintable>
+                                <isStuffableAirtight>false</isStuffableAirtight>
                             </building>
                             <comps>
                                 <li Class="CompProperties_MeditationFocus">

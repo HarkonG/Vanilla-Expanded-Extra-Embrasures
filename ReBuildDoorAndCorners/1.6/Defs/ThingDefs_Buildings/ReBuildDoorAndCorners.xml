@@ -79,6 +79,7 @@
             <blueprintGraphicData>
                 <texPath>Things/Building/Embrasure/Embrasure_Blueprint_Atlas</texPath>
             </blueprintGraphicData>
+            <isStuffableAirtight>false</isStuffableAirtight>
         </building>
         <damageMultipliers Inherit="false">
             <li>
