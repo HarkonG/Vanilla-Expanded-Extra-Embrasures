@@ -8,6 +8,9 @@
         <thingClass>Building</thingClass>
         <category>Building</category>
         <description>A simplistic, weak and impassable wall with a firing port to allow shooting from relative safety. Capable of holding up a roof.</description>
+        <replaceTags>
+            <li>Wall</li>
+        </replaceTags>
         <graphicData>
             <texPath>Things/Building/Linked/RusticEmbrasure</texPath>
             <graphicClass>Graphic_Appearances</graphicClass>

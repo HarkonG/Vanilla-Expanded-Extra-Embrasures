@@ -15,6 +15,9 @@
                             <defName>HRK_FineEmbrasure</defName>
                             <label>fine embrasure</label>
                             <description>A beautiful, impassable wall with a firing port to allow shooting from relative safety. Capable of holding up a roof.</description>
+                            <replaceTags>
+                                <li>Wall</li>
+                            </replaceTags>
                             <thingClass>Building</thingClass>
                             <category>Building</category>
                             <graphicData>
@@ -62,7 +65,7 @@
                             <castEdgeShadows>true</castEdgeShadows>
                             <fillPercent>0.70</fillPercent>
                             <coversFloor>true</coversFloor>
-                            <drawStyleCategory>Walls</drawStyleCategory>                    <!--<placingDraggableDimensions>1</placingDraggableDimensions>-->
+                            <drawStyleCategory>Walls</drawStyleCategory>                            <!--<placingDraggableDimensions>1</placingDraggableDimensions>-->
                             <tickerType>Never</tickerType>
                             <rotatable>false</rotatable>
                             <selectable>true</selectable>
